@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_2/tema/app_botton_style.dart';
-import 'package:flutter_application_2/widgets/main_screen/main_screen_widget.dart';
+// import 'package:flutter_application_2/widgets/main_screen/main_screen_widget.dart';
 
 class AuthWidget extends StatefulWidget {
   const AuthWidget({Key? key}) : super(key: key);
@@ -71,7 +71,7 @@ class _HeaderWidget extends StatelessWidget {
 }
 
 class FormWidget extends StatefulWidget {
- const  FormWidget({Key? key}) : super(key: key);
+  const FormWidget({Key? key}) : super(key: key);
 
   @override
   _FormWidgetState createState() => _FormWidgetState();
@@ -102,11 +102,11 @@ class _FormWidgetState extends State<FormWidget> {
   }
 
   @override
-   Widget build(BuildContext context) {
+  Widget build(BuildContext context) {
     final textStyle = const TextStyle(
       fontSize: 16,
       color: Color(0xFF212529),
-    ); 
+    );
     final color = const Color(0xFF01B4E4);
     final textFieldDecorator = const InputDecoration(
       border: OutlineInputBorder(),
@@ -126,29 +126,29 @@ class _FormWidgetState extends State<FormWidget> {
               color: Colors.red,
             ),
           ),
-         const  SizedBox(height: 20),
+          const SizedBox(height: 20),
         ],
         Text(
           'Username',
           style: textStyle,
         ),
-      const   SizedBox(height: 5),
+        const SizedBox(height: 5),
         TextField(
           controller: _loginTextController,
           decoration: textFieldDecorator,
         ),
-      const   SizedBox(height: 20),
+        const SizedBox(height: 20),
         Text(
           'Passeord',
           style: textStyle,
         ),
-      const   SizedBox(height: 5),
+        const SizedBox(height: 5),
         TextField(
           controller: _passwordTextController,
           decoration: textFieldDecorator,
           obscureText: true, // Звездочки
         ),
-       const  SizedBox(height: 25),
+        const SizedBox(height: 25),
         Row(
           children: [
             ElevatedButton(
